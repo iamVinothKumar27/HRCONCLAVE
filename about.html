@@ -28,20 +28,31 @@
 
 <style>
   /* Default black text for nav links and logo before scroll */
-  header.header:not(.scrolled) .navmenu ul li a,
-  header.header:not(.scrolled) .logo h1.sitename,
-  header.header:not(.scrolled) .cta-btn {
-    color: black !important;
-  }
+  header.header {
+  background-color: black !important;
+}
+header.header .navmenu ul li a,
+header.header .logo h1.sitename,
+header.header .cta-btn {
+  color: white !important;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
 
-  /* Optional: revert back on scroll */
-  header.header.scrolled .navmenu ul li a,
-  header.header.scrolled .logo h1.sitename,
-  header.header.scrolled .cta-btn {
-    color: white !important; /* or whatever the original was */
-    border-color: white !important;
-  }
-  
+header.header .navmenu ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+header.header .navmenu ul li a:hover::after {
+  width: 100%;
+}
   
 
 </style>
