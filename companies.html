@@ -12,6 +12,9 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -115,7 +118,71 @@ h2 {
   object-fit: contain;
 }
 
-@keyframes fadeSlideIn {
+
+.carousel-section {
+      padding: 40px 20px;
+      background-color: #f5f5f5;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .carousel-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 80px;
+      color: #002855;
+    }
+
+    .carousel-box {
+      width: 90%;
+      max-width: 1000px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      padding: 40px 30px;
+      height: 300px;
+      margin-top: 30px;
+    }
+
+    .swiper {
+      width: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+   
+    @keyframes fadeSlideIn {
   to {
     opacity: 1;
     transform: translateY(0);
@@ -148,29 +215,12 @@ h2 {
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            
             <li><a href="commitee.html">Team</a></li>
             <li><a href="companies.html">Companies</a></li>
 
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
+            
+            
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -179,43 +229,27 @@ h2 {
   
       </div>
     </header>
-    <main class="main" style="margin-top: 60px;">
-      <h2>Our Major Recruiters</h2>
-
-  <div class="logo-grid">
-    <div class="logo-item"><img src="assets/img/th (1).jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/th.jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/Cognizant-Logo.jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/zoho.jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/FTI_BIG-ec00521f.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/Caterpillar-Logo-1989-present.jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/tvs-logo-tvs-icon-transparent-png-free-vector.jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/current-logo-600x338.png" alt="" /></div>
-
-    <div class="logo-item"><img src="assets/img/Hyundai-Symbol.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/TAFE_Logo.jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/accolite-digital.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/embedur58996aeb6279b_6.jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/Trimble-Logo.jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/Hewlett-Packard-0٥.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/1346468.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/appviewx.jpg" alt="" /></div>
-
-    <div class="logo-item"><img src="assets/img/Tata_Consultancy_Services_Logo.svg.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/Sahaj Logo_Main Blue (1).png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/ltimindtree-logo.jpg" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/Fidelity-Logo.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/national-instruments-logo.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/Infosys-Logo-800x500.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/Accenture-Symbol.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/iisc.jpg" alt="" /></div>
-
-    <div class="logo-item"><img src="assets/img/iit-Madras-logo.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/iitk-logo.png" alt="" /></div>
-    <div class="logo-item"><img src="assets/img/IIT-Bombay-768x432.png" alt="" /></div>
-  </div>
-
-  
+    <main class="carousel-section">
+      <div class="carousel-title">Partnering Companies</div>
+      <div class="carousel-box">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="card"><img src="assets/img/th.jpg" alt="Logo 1" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/tvs-logo-tvs-icon-transparent-png-free-vector.jpg" alt="Logo 2" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/Infosys-Logo-800x500.png" alt="Logo 3" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/zoho.jpg" alt="Logo 4" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/HCL-Logo.png" alt="Logo 5" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/PinnacleLogo-color.png" alt="Logo 6" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/Aptean-Logo---Full-Color---300DPI-1.jpg" alt="Logo 7" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/TAFE_Logo.jpg" alt="Logo 8" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/JK-finner-logo.png" alt="Logo 9" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/Cognizant-Logo.jpg" alt="Logo 10" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/current-logo-600x338.png" alt="Logo 11" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/Sahaj Logo_Main Blue (1).png" alt="Logo 12" /></div></div>
+            <div class="swiper-slide"><div class="card"><img src="assets/img/Accenture-Symbol.png" alt="Logo 13" /></div></div>
+          </div>
+        </div>
+      </div>
     </main>
 
 
@@ -315,7 +349,37 @@ h2 {
             });
           });
           </script>
+
+           <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 4,
+      slidesPerGroup: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        }
+      }
+    });
+  </script>
+</body>
+</html>
         
-        </body>
-        
-        </html>
