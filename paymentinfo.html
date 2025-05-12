@@ -29,19 +29,7 @@
 
 <style>
   /* Default black text for nav links and logo before scroll */
-  header.header:not(.scrolled) .navmenu ul li a,
-  header.header:not(.scrolled) .logo h1.sitename,
-  header.header:not(.scrolled) .cta-btn {
-    color: black !important;
-  }
-
-  /* Optional: revert back on scroll */
-  header.header.scrolled .navmenu ul li a,
-  header.header.scrolled .logo h1.sitename,
-  header.header.scrolled .cta-btn {
-    color: white !important; /* or whatever the original was */
-    border-color: white !important;
-  }
+ 
   .info-card {
     border-radius: 20px;
     padding: 30px;
@@ -56,7 +44,33 @@
   .info-icon {
     font-size: 2rem;
     color: #6c63ff;
+
   }
+  header.header {
+  background-color: black !important;
+}
+header.header .navmenu ul li a,
+header.header .logo h1.sitename,
+header.header .cta-btn {
+  color: white !important;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+header.header .navmenu ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+header.header .navmenu ul li a:hover::after {
+  width: 100%;
+}
 </style>
 
 <script>
@@ -73,50 +87,33 @@
   <body class="index-page">
 
     <header id="header" class="header d-flex align-items-center fixed-top">
-      <div class="container-fluid container-xl position-relative d-flex align-items-center">
-  
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          
-          <h1 class="sitename">HR CONCLAVE</h1>
-        </a>
-  
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Schedule</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="commitee.html">Team</a></li>
-            <li><a href="companies.html">Companies</a></li>
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-  
-        <a class="cta-btn" href="index.html#about">Get Started</a>
-  
-      </div>
-    </header>
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        
+        <h1 class="sitename">HR CONCLAVE</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Schedule</a></li>
+          <li><a href="commitee.html">Team</a></li>
+          <li><a href="companies.html">Companies</a></li>
+          <li><a href="paymentinfo.html">Payment</a></li>
+
+         
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
     <main class="main">
-        <section class="py-5" style="background: #f3f4f6;margin-top: 200px;">
+        <section class="py-5" style="background: #f3f4f6;margin-top: 80px;">
             <div class="container text-center">
               <h2 class="mb-4 fw-bold">Payment Information</h2>
               <div class="row justify-content-center">
