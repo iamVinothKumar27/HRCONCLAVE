@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hackathons</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Fix for unwanted scroll -->
+  <style>
+    html, body {
+      overflow-x: hidden;
+      scroll-behavior: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      margin-top: 90px; /* Adjust to match fixed header height */
+    }
+
+    #header {
+      background: rgba(0, 0, 0, 0.9); /* Make header visible initially */
+    }
+
+    .image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* spacing between images */
+  flex-wrap: wrap; /* wraps on smaller screens */
+  margin-top: 30px;
+}
+
+.image-row img {
+  width: 22%; /* ~25% minus spacing for 4 images per row */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+}
+.contest-themes h3, .portfolio-section h2, .timeline-section h2 {
+      font-size: 50px;  /* Adjust this value as needed */
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">HR CONCLAVE</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Schedule</a></li>
+          <li><a href="hackathon.html" class="active">Hackathons</a></li>
+          <li><a href="commitee.html">Team</a></li>
+          <li><a href="companies.html">Companies</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="index.html#about">Get Started</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url('assets/img/page-title-bg.webp');">
+      <div class="container position-relative">
+        <h1>Hackathons</h1>
+        <p>Explore exciting upcoming and past hackathons powered by innovation and creativity.</p>
+      </div>
+    </div>
+
+    <!-- Hackathons Section -->
+    <section id="hackathon" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Hackathons</h2>
+          <p>Explore the exciting hackathons organized by the Department of Artificial Intelligence and Data Science. These events are designed to challenge and inspire students to develop innovative solutions using the latest technologies.</p>
+        </div>
+    
+        <div class="row gy-4">
+    
+          <div class="col-lg-3 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <a href="hackathon-details-1.html"><img src="sustain.jpg" class="img-fluid" alt="AI Innovate"></a>
+              <div class="portfolio-info">
+                <h4>Building Tomorrow</h4>
+                <div class="portfolio-links">
+                  <a href="hackathon-details-1.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <a href="hackathon-details-2.html"><img src="energy.jpg" class="img-fluid" alt="AI for Social Good"></a>
+              <div class="portfolio-info">
+                <h4>Energy Harvesting and Monitoring</h4>
+                <div class="portfolio-links">
+                  <a href="hackathon-details-2.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <a href="hackathon-details-3.html"><img src="4.jpg" class="img-fluid" alt="ML for Healthcare"></a>
+              <div class="portfolio-info">
+                <h4>Industry 4.0 IT Products</h4>
+                <div class="portfolio-links">
+                  <a href="hackathon-details-3.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <a href="hackathon-details-4.html"><img src="soft.jpg" class="img-fluid" alt="Sustainability Hack"></a>
+              <div class="portfolio-info">
+                <h4>Sustainability-focused Software Development</h4>
+                <div class="portfolio-links">
+                  <a href="hackathon-details-4.html" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div> <!-- end row -->
+      </div>
+    </section>
+    
+
+    <!-- Contest Tracks & Coordinators Section -->
+    <section class="section contest-info">
+      <div class="container">
+        <h2>Contest Tracks & Coordinators</h2>
+        <ul>
+          <li><strong>Civil & Architecture:</strong> Mr. P Pavalavelsh, Dr. V. Ravi Sankar</li>
+          <li><strong>ECE & EEE:</strong> Dr. D. Kavitha, Dr. G. Ananthi</li>
+          <li><strong>Mechanical & Mechatronics:</strong> Dr. C. Vignesh, Dr. H. Ramesh</li>
+          <li><strong>CSE & IT (National Level):</strong> Dr. K. Indira, Ms. C. V. Nisha Angeline, Ms. R. Subhashni</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contest Themes Section -->
+    <section class="section contest-themes">
+      <div class="container">
+        <h2>Contest Themes</h2>
+        <ul>
+          <li><strong>Building Tomorrow:</strong> Sustainable and Inclusive Design</li>
+          <li><strong>Energy Harvesting and Monitoring</strong></li>
+          <li><strong>Industry 4.0 IT Products</strong></li>
+          <li><strong>Sustainability-focused Software Development</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section contest-timeline">
+      <div class="container">
+        <h2>Timeline</h2>
+        <ul>
+          <li><strong>12 May</strong> – Brochure Posted</li>
+          <li><strong>23 May</strong> – Contest Entry Deadline</li>
+          <li><strong>24 May</strong> – Kickstart</li>
+          <li><strong>2 June</strong> – Round 1</li>
+          <li><strong>13 June</strong> – Round 2</li>
+          <li><strong>20–21 June</strong> – Finals</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Expected Revenue Section -->
+    <section class="section expected-revenue">
+      <div class="container">
+        <h2>Expected Revenue</h2>
+        <ul>
+          <li><strong>HR Conclave:</strong> ₹1,20,000</li>
+          <li><strong>Contests:</strong> ₹24,000</li>
+          <li><strong>Total:</strong> ₹1,44,000</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer dark-background">
+    <!-- Footer content here (remains unchanged) -->
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Init AOS without scroll offset -->
+  <script>
+    AOS.init({
+      offset: 0,
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  </script>
+
+  <script src="assets/js/main.js"></script>
+<footer id="footer" class="footer dark-background">
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="tce.jpg" alt="TCE Logo" style="max-height: 60px;"/>
+        </a>
+        <div class="footer-contact pt-3">
+          <h4>CONTACT</h4>
+          <p><strong>Dr. M. K. Kavitha Devi</strong><br>
+            Professor<br>
+            Computer Science and Engineering<br>
+            mkkdit@tce.edu<br>
+            +91 9842093048</p>
+          <p><strong>Dr. S. Padmavathi</strong><br>
+            Professor<br>
+            Information Technology<br>
+            spmcse@tce.edu<br>
+            +91 9486823139</p>
+          <p><strong>Conference E-mail:</strong> <span class="highlight">scopetce@tce.edu</span></p>
+        </div>
+        <div class="social-links d-flex mt-4">
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="commitee.html">Committee</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="companies.html">Companies</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Services</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-12 footer-info">
+        <h4>Contact Information</h4>
+        <p><i class="bi bi-telephone-fill"></i> +91 452 2482240, 2482241, 2482242</p>
+        <p><i class="bi bi-envelope-fill"></i> principal@tce.edu</p>
+        <p><i class="bi bi-globe"></i> tce.edu</p>
+        <p><i class="bi bi-geo-alt-fill"></i> Thiagarajar College Of Engineering,<br> Madurai 625 015 Tamilnadu, India</p>
+        <a href="#" class="get-direction-btn">Get Direction</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="container copyright text-center mt-4">
+    <hr>
+    <p>© <span>2024</span> <strong class="px-1 sitename">TCE</strong> <span>All Rights Reserved</span></p>
+  </div>
+</footer>
+
+
+</body>
+</html>
