@@ -72,45 +72,34 @@
 
 <body>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <h1 class="sitename">HR CONCLAVE</h1>
-      </a>
+     <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          
+          <h1 class="sitename">HR CONCLAVE</h1>
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+             <li><a href="services.html">Schedule</a></li>
+             <li><a href="hackathon.html" class="active">Hackathons</a></li>
+            <li><a href="commitee.html">Team</a></li>
+            <li><a href="companies.html">Companies</a></li>
+            <li><a href="paymentinfo.html">Payment</a></li>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Schedule</a></li>
-          <li><a href="hackathon.html" class="active">Hackathons</a></li>
-          <li><a href="commitee.html">Team</a></li>
-          <li><a href="companies.html">Companies</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="cta-btn" href="index.html#about">Get Started</a>
-    </div>
-  </header>
+            
+            
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+        <a class="cta-btn" href="index.html#about">Get Started</a>
+  
+      </div>
+    </header>
 
   <main class="main">
 
@@ -134,7 +123,7 @@
     
           <div class="col-lg-3 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <a href="hackathon-details-1.html"><img src="sustain.jpg" class="img-fluid" alt="AI Innovate"></a>
+              <a href="hackathon-details-1.html"><img src="assets/img/sustain.jpg" class="img-fluid" alt="AI Innovate"></a>
               <div class="portfolio-info">
                 <h4>Building Tomorrow</h4>
                 <div class="portfolio-links">
@@ -146,11 +135,11 @@
     
           <div class="col-lg-3 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <a href="hackathon-details-2.html"><img src="energy.jpg" class="img-fluid" alt="AI for Social Good"></a>
+              <a href="assets/img/hackathon-details-2.html"><img src="assets/img/energy.jpg" class="img-fluid" alt="AI for Social Good"></a>
               <div class="portfolio-info">
                 <h4>Energy Harvesting and Monitoring</h4>
                 <div class="portfolio-links">
-                  <a href="hackathon-details-2.html" title="More Details"><i class="bi bi-link"></i></a>
+                  <a href="assets/img/hackathon-details-2.html" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
             </div>
@@ -158,7 +147,7 @@
     
           <div class="col-lg-3 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <a href="hackathon-details-3.html"><img src="4.jpg" class="img-fluid" alt="ML for Healthcare"></a>
+              <a href="hackathon-details-3.html"><img src="assets/img/4.jpg" class="img-fluid" alt="ML for Healthcare"></a>
               <div class="portfolio-info">
                 <h4>Industry 4.0 IT Products</h4>
                 <div class="portfolio-links">
@@ -170,7 +159,7 @@
     
           <div class="col-lg-3 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <a href="hackathon-details-4.html"><img src="soft.jpg" class="img-fluid" alt="Sustainability Hack"></a>
+              <a href="hackathon-details-4.html"><img src="assets/img/soft.jpg" class="img-fluid" alt="Sustainability Hack"></a>
               <div class="portfolio-info">
                 <h4>Sustainability-focused Software Development</h4>
                 <div class="portfolio-links">
@@ -241,7 +230,7 @@
   </main>
 
   <!-- Footer -->
-<footer id="footer" class="footer -background">
+<footer id="footer"  class="footer dark-background">
 
   <div class="container footer-top">
     <div class="row gy-4">
@@ -284,6 +273,37 @@
   <div class="container copyright text-center mt-4">
     <p>© 2025 HR Conclave. All rights reserved.</p>
   </div>
+
+
+<!-- Footer -->
+  <footer id="footer" class="footer dark-background">
+    <!-- Footer content here (remains unchanged) -->
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Init AOS without scroll offset -->
+  <script>
+    AOS.init({
+      offset: 0,
+      duration: 600,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  </script>
+
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
