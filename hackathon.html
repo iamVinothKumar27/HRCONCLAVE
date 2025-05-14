@@ -13,7 +13,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +29,8 @@
 
   <!-- Fix for unwanted scroll -->
   <style>
-    html, body {
+    html,
+    body {
       overflow-x: hidden;
       scroll-behavior: auto;
       margin: 0;
@@ -35,81 +38,55 @@
     }
 
     .main {
-      margin-top: 90px; /* Adjust to match fixed header height */
+      margin-top: 90px;
     }
 
     #header {
-      background: rgba(0, 0, 0, 0.9); /* Make header visible initially */
+      background: rgba(0, 0, 0, 0.9);
     }
 
     .image-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* spacing between images */
-  flex-wrap: wrap; /* wraps on smaller screens */
-  margin-top: 30px;
-}
-
-.image-row img {
-  width: 22%; /* ~25% minus spacing for 4 images per row */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-}
-
-.image-row img:hover {
-  transform: scale(1.05);
-}
-.contest-themes h3, .portfolio-section h2, .timeline-section h2 {
-      font-size: 50px;  /* Adjust this value as needed */
-      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
     }
 
+    .image-row img {
+      width: 22%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .image-row img:hover {
+      transform: scale(1.05);
+    }
+
+    .contest-themes h2,
+    .portfolio-section h2,
+    .timeline-section h2 {
+      font-size: 50px;
+      font-weight: bold;
+    }
   </style>
 </head>
 
 <body>
+
   <!-- 🔵 Top Header with 4 Images -->
-<div class="top-header d-flex align-items-center px-3 py-2" style="background-color: #f8f9fa;">
-  <div class="container-fluid d-flex align-items-center">
-    <img src="assets/img/logo1.png" alt="Logo 1" style="height: 50px; margin-right: 15px;">
-    <img src="assets/img/logo2.png" alt="Logo 2" style="height: 50px; margin-right: 15px;">
-    <img src="assets/img/logo3.png" alt="Logo 3" style="height: 50px; margin-right: 15px;">
-    <img src="assets/img/logo4.png" alt="Logo 4" style="height: 50px;">
-  </div>
-</div>
-
-<!-- 🔻 Existing Header -->
-<header id="header" class="header d-flex align-items-center fixed-top" style="top: 65px;"> <!-- adjust top offset -->
-  <div class="container-fluid container-xl position-relative d-flex align-items-center">
-    <a href="index.html" class="logo d-flex align-items-center me-auto">
-      <h1 class="sitename">HR CONCLAVE</h1>
-    </a>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Schedule</a></li>
-        <li><a href="hackathon.html" class="active">Hackathons</a></li>
-        <li><a href="commitee.html">Team</a></li>
-        <li><a href="companies.html">Companies</a></li>
-        <li><a href="paymentinfo.html">Payment</a></li>
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-      <div class="container-fluid container-xl position-relative d-flex align-items-center">
   
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          
-          <h1 class="sitename">HR CONCLAVE</h1>
-        </a>
-  
-        <nav id="navmenu" class="navmenu">
+
+  <!-- 🔻 Header -->
+<header id="header" class="header d-flex align-items-center" style="margin-top: 0;">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">HR CONCLAVE</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -119,36 +96,34 @@
           <li><a href="companies.html">Companies</a></li>
           <li><a href="paymentinfo.html">Payment</a></li>
           <li><a href="madurai2.html">Madurai</a></li>
-
+        </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-        <a class="cta-btn" href="index.html#about">Get Started</a>
-  
-      </div>
-    </header>
+      <a class="cta-btn" href="index.html#about">Get Started</a>
+    </div>
+  </header>
+
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url('assets/img/page-title-bg.webp');">
-      <div class="container position-relative">
-        <h1>Hackathons</h1>
-        <p>Explore exciting upcoming and past hackathons powered by innovation and creativity.</p>
-      </div>
-    </div>
+    
 
     <!-- Hackathons Section -->
     <section id="hackathon" class="portfolio">
       <div class="container">
         <div class="section-title">
           <h2>Hackathons</h2>
-          <p>Explore the exciting hackathons organized by the Department of Artificial Intelligence and Data Science. These events are designed to challenge and inspire students to develop innovative solutions using the latest technologies.</p>
+          <p>Explore the exciting hackathons organized by the Department of Artificial Intelligence and Data Science.
+            These events are designed to challenge and inspire students to develop innovative solutions using the latest
+            technologies.</p>
         </div>
-    
+
         <div class="row gy-4">
-    
+
           <div class="col-lg-3 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <a href="hackathon-details-1.html"><img src="assets/img/sustain.jpg" class="img-fluid" alt="AI Innovate"></a>
+              <a href="hackathon-details-1.html"><img src="assets/img/sustain.jpg" class="img-fluid"
+                  alt="Building Tomorrow"></a>
               <div class="portfolio-info">
                 <h4>Building Tomorrow</h4>
                 <div class="portfolio-links">
@@ -157,10 +132,11 @@
               </div>
             </div>
           </div>
-    
+
           <div class="col-lg-3 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <a href="hackathon-details-2.html"><img src="assets/img/energy.jpg" class="img-fluid" alt="AI for Social Good"></a>
+              <a href="hackathon-details-2.html"><img src="assets/img/energy.jpg" class="img-fluid"
+                  alt="Energy Harvesting and Monitoring"></a>
               <div class="portfolio-info">
                 <h4>Energy Harvesting and Monitoring</h4>
                 <div class="portfolio-links">
@@ -169,10 +145,11 @@
               </div>
             </div>
           </div>
-    
+
           <div class="col-lg-3 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <a href="hackathon-details-3.html"><img src="assets/img/4.jpg" class="img-fluid" alt="ML for Healthcare"></a>
+              <a href="hackathon-details-3.html"><img src="assets/img/4.jpg" class="img-fluid"
+                  alt="Industry 4.0 IT Products"></a>
               <div class="portfolio-info">
                 <h4>Industry 4.0 IT Products</h4>
                 <div class="portfolio-links">
@@ -181,10 +158,11 @@
               </div>
             </div>
           </div>
-    
+
           <div class="col-lg-3 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
-              <a href="hackathon-details-4.html"><img src="assets/img/soft.jpg" class="img-fluid" alt="Sustainability Hack"></a>
+              <a href="hackathon-details-4.html"><img src="assets/img/soft.jpg" class="img-fluid"
+                  alt="Sustainability-focused Software Development"></a>
               <div class="portfolio-info">
                 <h4>Sustainability-focused Software Development</h4>
                 <div class="portfolio-links">
@@ -193,13 +171,12 @@
               </div>
             </div>
           </div>
-    
+
         </div> <!-- end row -->
       </div>
     </section>
-    
 
-    <!-- Contest Tracks & Coordinators Section -->
+    <!-- Contest Tracks & Coordinators -->
     <section class="section contest-info">
       <div class="container">
         <h2>Contest Tracks & Coordinators</h2>
@@ -212,7 +189,7 @@
       </div>
     </section>
 
-    <!-- Contest Themes Section -->
+    <!-- Contest Themes -->
     <section class="section contest-themes">
       <div class="container">
         <h2>Contest Themes</h2>
@@ -225,64 +202,18 @@
       </div>
     </section>
 
-    <!-- Timeline Section -->
-    <section class="section contest-timeline">
-      <div class="container">
-        <h2>Timeline</h2>
-        <ul>
-          <li><strong>12 May</strong> – Brochure Posted</li>
-          <li><strong>23 May</strong> – Contest Entry Deadline</li>
-          <li><strong>24 May</strong> – Kickstart</li>
-          <li><strong>2 June</strong> – Round 1</li>
-          <li><strong>13 June</strong> – Round 2</li>
-          <li><strong>20–21 June</strong> – Finals</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Expected Revenue Section -->
-    <section class="section expected-revenue">
-      <div class="container">
-        <h2>Expected Revenue</h2>
-        <ul>
-          <li><strong>HR Conclave:</strong> ₹1,20,000</li>
-          <li><strong>Contests:</strong> ₹24,000</li>
-          <li><strong>Total:</strong> ₹1,44,000</li>
-        </ul>
-      </div>
-    </section>
+    <!-- Add Timeline Section here if needed -->
 
   </main>
 
-  <!-- Footer -->
-  <footer id="footer" class="footer dark-background">
-    <!-- Footer content here (remains unchanged) -->
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS -->
+  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Init AOS without scroll offset -->
-  <script>
-    AOS.init({
-      offset: 0,
-      duration: 600,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
-  </script>
-
   <script src="assets/js/main.js"></script>
+
+</body>
 <footer id="footer" class="footer dark-background">
 
   <div class="container footer-top">
@@ -303,8 +234,7 @@
           <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="about.html">About</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="services.html">Schedule</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <a href="hackathon.html">Hackathons</a></li>
-
+          <li><i class="bi bi-chevron-right"></i> <a href="hackathon.html">Hackathons</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="commitee.html">Team</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="companies.html">Companies</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="paymentinfo.html">Payment</a></li>
@@ -333,5 +263,4 @@
 </footer>
 
 
-</body>
 </html>
